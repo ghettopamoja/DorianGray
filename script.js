@@ -51,9 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 23, 
             quote: "In the depths of solitude, we discover the strength to rise and shine."
         },
-         {
-            audio: "y2mate.com - UNDRESSED Forever Young Music Video.mp3", 
-            start: 20, 
+        {
+            audio: "y2mate.com - UNDRESSD  Forever Young Music Video.mp3", 
+            start: 34, 
             duration: 23, 
             quote: "Life is a journey, and every goodbye is just another step toward finding ourselves."
         },
