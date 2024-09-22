@@ -255,7 +255,7 @@ body {
 @media (max-width: 768px) {
     .scroll-button {
         width: 50px; /* Reduce button width for smaller screens */
-        height: 100%;
+        height: 80%;
     }
 
     .scroll-button button {
