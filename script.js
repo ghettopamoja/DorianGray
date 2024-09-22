@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             audio: "y2mate.com - UNDRESSD  Forever Young Music Video.mp3", 
-            start: 34, 
+            start: 54, 
             duration: 23, 
             quote: "Life is a journey, and every goodbye is just another step toward finding ourselves."
         },
