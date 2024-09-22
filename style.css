@@ -4,15 +4,16 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to right, #ff7f7f, #ffb6c1, #ff69b4, #ff1493, #db7093);
+    background: linear-gradient(to right, #007bff, #00bfff, #1e90ff, #4682b4, #5f9ea0);
     font-family: 'Arial, sans-serif';
-    color: #333;
+    color: #fff;
 }
+
 
 .container {
     text-align: center;
     padding: 20px;
-    border: 2px solid #ccc;
+    border: 2px solid #fff;
     border-radius: 10px;
     background-color: transparent;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,11 +34,11 @@ body {
     margin-bottom: 10px;
 }
 .heading-art h1 span:first-child {
-    color: chocolate;
+    color: #FF0000;
 }
 
 .heading-art h1 span {
-    color:darkslategray;
+    color:#ff1493;
 }
 
 .colors {
@@ -46,19 +47,19 @@ body {
 }
 
 .heading-art h1 span:nth-child(2) {
-    color:chartreuse;
+    color:crimson;
 }
 .heading-art h1 span:nth-child(3) {
-    color:chartreuse;
+    color:crimson;
 }
 .heading-art h1 span:nth-child(4) {
     color:chocolate;
 }
 .heading-art h1 span:nth-child(5) {
-    color:chartreuse;
+    color:crimson;
 }
 .heading-art h1 span:nth-child(6) {
-    color:chartreuse;
+    color:crimson;
 }
 .intro-div{
     width: 80%;
@@ -128,7 +129,7 @@ body {
 
 .content .heading h2 {
     font-size: 2em;
-    color: #4a90e2;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -203,9 +204,16 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
-    overflow:hidden;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer */
     background-color: transparent;
 }
+
+.playlist::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+
 
 .scroll-button {
     background-color: transparent;
@@ -289,7 +297,7 @@ body {
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
-    background-image: url('img1.jpg');
+    background-image: url('img6.jpg');
     background-size: cover; /* Ensure the background image covers the player */
     background-position: center;
     background-repeat: no-repeat;
@@ -371,9 +379,10 @@ body {
     border-radius: 10px;
     margin-bottom: 10px;
     text-align: center;
-    z-index: 2;
+    z-index: 1;
     width: 98%;
     color: #fff;
+    height: 20vh;
      
 }
 
@@ -402,6 +411,38 @@ body {
    font-size: 20px;
 }
 
+.meaning-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+
+.letter-meaning {
+    font-size: 24px;
+    margin: 10px 0;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.letter-meaning span {
+    font-weight: bold;
+    color: #ff6347; /* Tomato color */
+    margin-right: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Player buttons container */
 .player-buttons {
     display: flex;
@@ -412,6 +453,7 @@ body {
     height: 9vh;
     align-items: center;
     background-color: transparent;
+    z-index: 2;
 }
 
 /* Styling for individual buttons */
